@@ -1,0 +1,568 @@
+/*
+Theme Name: Web170
+Author:Kayla Kang
+Author URI: http://kaylakang.com
+Description: This is the demo theme for the WEB170 class for the Spring 2017
+Version:1.0
+*/
+
+*{margin: 0; padding: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+nav {
+    background: #b9b9b9;
+    position: fixed;
+    top: 0;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    list-style: none;
+    line-height: 50px;
+}
+nav ul li a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: background 1s;
+    transition: color 1s;
+}
+
+nav ul li:hover {
+    background: white;
+}
+nav ul li:hover a{
+    color: black;
+}
+#bg {
+
+    text-align: center;
+    background: url(images/bg.png);
+    height: 570px;
+}
+#home> #bg> #header {
+    margin-bottom: 50px;
+}
+#header {
+    height: 100%;
+    margin-top: 100px;
+
+}
+
+
+#header> h1{
+    font-size: 5.5em;
+    letter-spacing: 0.13em;
+    padding-top:200px;;
+}
+
+#header a {
+    padding: 15px 0;
+    border: 1px solid black;
+    display: block;
+    width: 25em;
+    margin: 0 auto;
+    font-size: 1em;
+    letter-spacing: 0.11em;
+    margin-top: 40px;
+    color: black;
+    opacity:0;
+    transition: opacity 2s;
+    cursor: pointer;
+}
+#bg:hover #header> a {
+    opacity: 1;
+    background: black;
+    color: white;
+}
+
+#wrapper {
+    width: 60em;
+    margin: 0 auto;
+    padding: 100px 50px;
+    text-align: center;
+}
+#wrapper> h2 {
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+#wrapper> ul {
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+#wrapper> ul> li {
+    width: 18.75em;
+    overflow: hidden;
+    margin-right: 30px;
+    float: left;
+}
+
+
+#wrapper> ul> li:nth-child(3){
+    margin-right: 0;
+}
+#wrapper> h3{
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+}
+#wrapper> p {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+article {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.prod> ul {
+    width: 100%;
+    text-align: center;
+}
+.prod> ul> li {
+    width: 18.75em;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+.project> div{
+    background: url(images/collabbg.png) no-repeat center;
+    padding: 50px 0;
+    height: 550px;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.project> div> .txt {
+    background: rgba(255, 255, 255, 0.62);
+    height: 550px;
+    padding: 50px 0;
+    margin-top: 655px;
+    transition: margin-top 1s;
+}
+.project:hover> div> .txt {
+
+    margin-top: -50px;
+}
+.project> div> .txt> h4{
+    font-size: 1.8em;
+    padding: 10px 0;
+    border: 1px solid black;
+    width: 18.75em;
+    margin: 0 auto;
+
+}
+.project> div> .txt> p {
+    padding: 50px 0;
+    font-size: 1.6em;
+
+}
+
+.project> div> .txt> img{
+    width: 9.375em;
+}
+form {
+
+    padding-top: 0;
+}
+
+form >fieldset {
+    padding: 30px;
+
+}
+form> fieldset> legend {
+    padding: 0 10px;
+}
+form >fieldset >input {
+    width: 21.875em;
+    margin-bottom: 10px;
+}
+form>fieldset>textarea{
+    width:25em;
+    margin-bottom: 10px;
+}
+form> input.done{
+    margin-top: 80px;
+    border: 1px solid black;
+    background: white;
+    width: 12.5em;
+    padding: 10px 0;
+    cursor:pointer;
+
+}
+form> input.done:hover{
+    background: black;
+    color: white;
+}
+
+/*sidebar++++++++++++++++++*/
+#sidebar {
+    width: 220px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 30px auto;
+    float: right;
+}
+
+#sidebar ul {
+    padding-left: 10px;
+    list-style: square;
+    line-height: 30px;
+}
+
+#sidebar ul > li > ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+#sidebar ul li .active {
+    font-weight: 400;
+    color: #84bc87;
+}
+
+
+footer {
+    clear: both;
+    width: 100%;
+    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.12);
+    bottom: 0;
+    color: gray;
+    margin-top: 50px;
+}
+
+#inner {
+    width: 58.75em;
+    clear: both;
+    height: 100%;
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+#inner ul.add {
+    width: 31.25em;
+    margin: 0 auto;
+}
+
+
+#inner ul li {
+    float: left;
+    width: 6.25em;
+    text-align: center;
+
+}
+
+#inner ul li a{
+    color: gray;
+    display: block;
+}
+#inner ul.add li:hover a {
+    color: white;
+    font-weight: bold;
+}
+
+#inner ul.social {
+
+    width: 25em;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#inner ul.social li a {
+    color: gray;
+}
+
+#inner ul.social li:hover a {
+    color: white;
+}
+
+#inner ul.copy {
+    width: 28.125em;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+
+}
+#inner ul.copy li {
+    width: 9.375em;
+    text-decoration: none;
+}
+
+#inner ul.copy li a {
+    text-decoration: underline;
+}
+
+#validator {
+    position: fixed;
+    bottom: 0;
+}
+
+/* ++++++++++++++++++++++ RESPONSIVE ++++++++++++++++++++++ */
+
+@media screen and (max-width: 700px){
+
+    #wrapper {
+        width: 90%;
+         margin: 0 auto;
+        padding: 100px 0;
+    }
+    #wrapper> ul{
+        margin-bottom: 0;
+    }
+    #wrapper> ul> li{
+        margin-right:0;
+        float:none;
+        overflow: hidden;
+        margin: 0 auto;
+         margin-bottom: 30px;
+    }
+    .prod> ul {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .prod> ul> li:nth-child(3){
+        display: none;
+    }
+
+    footer{
+        width:100%
+    }
+
+    footer> #inner {
+        width: 80%;
+        margin: 0 auto;
+    }
+    footer> #inner> ul.copy{
+        padding-bottom: 20px;
+    }
+    nav {
+        display: none;
+    }
+
+    .nav-button {
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background: url(images/open.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+	.nav-button.open {
+		background: url(images/close.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+
+
+	.primary-nav {
+		width: 100%;
+		float: none;
+		background: #b9b9b9;
+
+		display: block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+	.primary-nav li {
+		display: none;
+		width: 100%;
+        text-align: center;
+	}
+	.primary-nav li a {
+		display: block;
+		width: 90%;
+		padding: 10px 5%;
+		font-size: 14px;
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid #b9b9b9;
+	}
+	.primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	.primary-nav > li:first-child {
+		border-top: 1px solid #b9b9b9;
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open {
+		height: auto;
+		padding-top: 50px;
+	}
+	.primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	.primary-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	.primary-nav li.parent > a:after {
+		content: "▼";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	.primary-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	.primary-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	.primary-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	.primary-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+    #mobile {
+        display: none;
+    }
+
+    #wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+        #wrapper> ul{
+        margin-bottom: 0;
+    }
+    #wrapper> ul> li{
+        margin-right:0;
+        float:none;
+        overflow: hidden;
+        margin: 0 auto;
+         margin-bottom: 30px;
+    }
+    .prod> ul {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .prod> ul> li:nth-child(3){
+        display: none;
+    }
+
+     footer{
+        width:100%
+    }
+
+    footer> #inner {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: 801px) and (max-width:1000px){
+    #mobile {
+        display: none;
+    }
+      #wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #wrapper> ul >li{
+        width: 30%;
+        overflow: hidden;
+        margin-right: 20px;
+        float: left;
+    }
+    #wrapper> ul> li> img{
+        width: 100%;
+    }
+    .prod> ul> li{
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1001px) and (max-width:1400px){
+    #mobile {
+    display: none;}
+    #wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #wrapper> ul >li{
+        width: 30%;
+        overflow: hidden;
+        margin-right: 40px;
+        float: left;
+    }
+    #wrapper> ul> li> img{
+        width: 100%;
+    }
+    .prod> ul> li{
+        height: 100%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #mobile{
+        display: none;
+    }
+}
