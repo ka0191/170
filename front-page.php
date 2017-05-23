@@ -35,7 +35,7 @@
     		<?php endwhile; endif; ?>
 		</ul>
 
-    <small>front-page.php</small>
+    <small>front-pag e.php</small>
 <?php get_sidebar(); ?>
 </div>
 
